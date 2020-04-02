@@ -3,27 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED9CE162991A202A745B513E /* Pods_porate_chai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12236985C9F733E289BE198 /* Pods_porate_chai.framework */; };
+		FC6B067024352437001630D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC6B066F24352436001630D6 /* Main.storyboard */; };
+		FC6B067224352459001630D6 /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC6B067124352459001630D6 /* Landing.storyboard */; };
+		FC6B067A243524CC001630D6 /* GuardianSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0673243524C5001630D6 /* GuardianSignUpViewController.swift */; };
+		FC6B067B243524CC001630D6 /* SignUpTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0674243524C6001630D6 /* SignUpTypeViewController.swift */; };
+		FC6B067C243524CC001630D6 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0675243524C7001630D6 /* HomeTableViewCell.swift */; };
+		FC6B067E243524CC001630D6 /* TutorSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0677243524C8001630D6 /* TutorSignUpViewController.swift */; };
+		FC6B067F243524CC001630D6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0678243524CA001630D6 /* SearchViewController.swift */; };
+		FC6B0680243524CC001630D6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0679243524CB001630D6 /* HomeViewController.swift */; };
+		FC6B0683243524D3001630D6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0682243524D2001630D6 /* File.swift */; };
+		FC6B06872435270A001630D6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B068624352709001630D6 /* ProfileViewController.swift */; };
+		FC6B068D2435654B001630D6 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B068C2435654B001630D6 /* EditProfileViewController.swift */; };
+		FC6B068F24356C1F001630D6 /* DetailsTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B068E24356C1E001630D6 /* DetailsTutorViewController.swift */; };
 		FCC3EE72243114710067BB67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC3EE71243114710067BB67 /* AppDelegate.swift */; };
 		FCC3EE74243114710067BB67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC3EE73243114710067BB67 /* SceneDelegate.swift */; };
 		FCC3EE76243114710067BB67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC3EE75243114710067BB67 /* ViewController.swift */; };
-		FCC3EE79243114710067BB67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC3EE77243114710067BB67 /* Main.storyboard */; };
 		FCC3EE7B243114890067BB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC3EE7A243114890067BB67 /* Assets.xcassets */; };
 		FCC3EE7E243114890067BB67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC3EE7C243114890067BB67 /* LaunchScreen.storyboard */; };
+		FCC3EE86243114CE0067BB67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCC3EE85243114CE0067BB67 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EB3E47797C0BE747C951742 /* Pods-porate-chai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-porate-chai.debug.xcconfig"; path = "Target Support Files/Pods-porate-chai/Pods-porate-chai.debug.xcconfig"; sourceTree = "<group>"; };
+		3DFA938F9DD843BA081CCB3F /* Pods-porate-chai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-porate-chai.release.xcconfig"; path = "Target Support Files/Pods-porate-chai/Pods-porate-chai.release.xcconfig"; sourceTree = "<group>"; };
+		C12236985C9F733E289BE198 /* Pods_porate_chai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_porate_chai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC6B066F24352436001630D6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FC6B067124352459001630D6 /* Landing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
+		FC6B0673243524C5001630D6 /* GuardianSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuardianSignUpViewController.swift; sourceTree = "<group>"; };
+		FC6B0674243524C6001630D6 /* SignUpTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTypeViewController.swift; sourceTree = "<group>"; };
+		FC6B0675243524C7001630D6 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		FC6B0677243524C8001630D6 /* TutorSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorSignUpViewController.swift; sourceTree = "<group>"; };
+		FC6B0678243524CA001630D6 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FC6B0679243524CB001630D6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FC6B0682243524D2001630D6 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		FC6B068624352709001630D6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FC6B068C2435654B001630D6 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		FC6B068E24356C1E001630D6 /* DetailsTutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTutorViewController.swift; sourceTree = "<group>"; };
 		FCC3EE6E243114700067BB67 /* porate-chai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "porate-chai.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC3EE71243114710067BB67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCC3EE73243114710067BB67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FCC3EE75243114710067BB67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FCC3EE78243114710067BB67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCC3EE7A243114890067BB67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCC3EE7D243114890067BB67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCC3EE7F243114890067BB67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC3EE85243114CE0067BB67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +59,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9CE162991A202A745B513E /* Pods_porate_chai.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2A94B9B29DE46BA06D2C8FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EB3E47797C0BE747C951742 /* Pods-porate-chai.debug.xcconfig */,
+				3DFA938F9DD843BA081CCB3F /* Pods-porate-chai.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F8491C08C7C1C7CC1FB0C3C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C12236985C9F733E289BE198 /* Pods_porate_chai.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC6B0681243524D2001630D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC6B0682243524D2001630D6 /* File.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FCC3EE65243114700067BB67 = {
 			isa = PBXGroup;
 			children = (
 				FCC3EE70243114700067BB67 /* porate-chai */,
 				FCC3EE6F243114700067BB67 /* Products */,
+				D2A94B9B29DE46BA06D2C8FB /* Pods */,
+				F8491C08C7C1C7CC1FB0C3C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +112,25 @@
 		FCC3EE70243114700067BB67 /* porate-chai */ = {
 			isa = PBXGroup;
 			children = (
+				FC6B0681243524D2001630D6 /* Model */,
 				FCC3EE71243114710067BB67 /* AppDelegate.swift */,
 				FCC3EE73243114710067BB67 /* SceneDelegate.swift */,
 				FCC3EE75243114710067BB67 /* ViewController.swift */,
-				FCC3EE77243114710067BB67 /* Main.storyboard */,
+				FC6B0673243524C5001630D6 /* GuardianSignUpViewController.swift */,
+				FC6B0675243524C7001630D6 /* HomeTableViewCell.swift */,
+				FC6B0674243524C6001630D6 /* SignUpTypeViewController.swift */,
+				FC6B0677243524C8001630D6 /* TutorSignUpViewController.swift */,
+				FC6B0679243524CB001630D6 /* HomeViewController.swift */,
+				FC6B0678243524CA001630D6 /* SearchViewController.swift */,
+				FC6B068624352709001630D6 /* ProfileViewController.swift */,
+				FC6B068C2435654B001630D6 /* EditProfileViewController.swift */,
+				FC6B068E24356C1E001630D6 /* DetailsTutorViewController.swift */,
+				FC6B066F24352436001630D6 /* Main.storyboard */,
+				FC6B067124352459001630D6 /* Landing.storyboard */,
 				FCC3EE7A243114890067BB67 /* Assets.xcassets */,
 				FCC3EE7C243114890067BB67 /* LaunchScreen.storyboard */,
 				FCC3EE7F243114890067BB67 /* Info.plist */,
+				FCC3EE85243114CE0067BB67 /* GoogleService-Info.plist */,
 			);
 			path = "porate-chai";
 			sourceTree = "<group>";
@@ -74,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCC3EE82243114890067BB67 /* Build configuration list for PBXNativeTarget "porate-chai" */;
 			buildPhases = (
+				EFB83128D0785462BE05A350 /* [CP] Check Pods Manifest.lock */,
 				FCC3EE6A243114700067BB67 /* Sources */,
 				FCC3EE6B243114700067BB67 /* Frameworks */,
 				FCC3EE6C243114700067BB67 /* Resources */,
+				38D79EBF190B45B8AD25E674 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,21 +195,75 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6B067224352459001630D6 /* Landing.storyboard in Resources */,
 				FCC3EE7E243114890067BB67 /* LaunchScreen.storyboard in Resources */,
+				FC6B067024352437001630D6 /* Main.storyboard in Resources */,
+				FCC3EE86243114CE0067BB67 /* GoogleService-Info.plist in Resources */,
 				FCC3EE7B243114890067BB67 /* Assets.xcassets in Resources */,
-				FCC3EE79243114710067BB67 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38D79EBF190B45B8AD25E674 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-porate-chai/Pods-porate-chai-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-porate-chai/Pods-porate-chai-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-porate-chai/Pods-porate-chai-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFB83128D0785462BE05A350 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-porate-chai-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FCC3EE6A243114700067BB67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6B067C243524CC001630D6 /* HomeTableViewCell.swift in Sources */,
 				FCC3EE76243114710067BB67 /* ViewController.swift in Sources */,
+				FC6B067A243524CC001630D6 /* GuardianSignUpViewController.swift in Sources */,
 				FCC3EE72243114710067BB67 /* AppDelegate.swift in Sources */,
+				FC6B067F243524CC001630D6 /* SearchViewController.swift in Sources */,
+				FC6B0680243524CC001630D6 /* HomeViewController.swift in Sources */,
+				FC6B06872435270A001630D6 /* ProfileViewController.swift in Sources */,
+				FC6B067E243524CC001630D6 /* TutorSignUpViewController.swift in Sources */,
+				FC6B068D2435654B001630D6 /* EditProfileViewController.swift in Sources */,
+				FC6B067B243524CC001630D6 /* SignUpTypeViewController.swift in Sources */,
+				FC6B068F24356C1F001630D6 /* DetailsTutorViewController.swift in Sources */,
+				FC6B0683243524D3001630D6 /* File.swift in Sources */,
 				FCC3EE74243114710067BB67 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +271,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FCC3EE77243114710067BB67 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FCC3EE78243114710067BB67 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FCC3EE7C243114890067BB67 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +398,7 @@
 		};
 		FCC3EE83243114890067BB67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EB3E47797C0BE747C951742 /* Pods-porate-chai.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +417,7 @@
 		};
 		FCC3EE84243114890067BB67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DFA938F9DD843BA081CCB3F /* Pods-porate-chai.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
