@@ -10,24 +10,53 @@ import UIKit
 
 class DetailsTutorViewController: UIViewController {
 
-    @IBOutlet weak var profileimage: UIImageView!
+    
+    var area: String = ""
+    var fullname: String = ""
+    var instute: String = ""
+    var preferteachingclass: String = ""
+    var profileimageurl: String = ""
+    var splishedsubject: String = ""
+    var studyin: String = ""
+    var time: String = ""
+    
+    
+    @IBOutlet weak var profileimageurl_UIImageView: UIImageView!
+    @IBOutlet weak var fullname_UILabel: UILabel!
+    @IBOutlet weak var instute_UILabel: UILabel!
+    @IBOutlet weak var studyin_UILabel: UILabel!
+    @IBOutlet weak var preferteachingclass_UILabel: UILabel!
+    @IBOutlet weak var splishedsubject_UILabel: UILabel!
+    @IBOutlet weak var time_UILabel: UILabel!
+    @IBOutlet weak var area_UILabel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        profileimage.layer.cornerRadius = 100
-        profileimage.clipsToBounds = true
-        // Do any additional setup after loading the view.
+        profileimageurl_UIImageView.layer.cornerRadius = 100
+        profileimageurl_UIImageView.clipsToBounds = true
+        
+        if let imageURL = URL(string: profileimageurl){
+            DispatchQueue.global().async {
+                let data = try? Data(contentsOf: imageURL)
+                if let data = data {
+                    let image = UIImage(data: data)
+                    DispatchQueue.main.async {
+                        self.profileimageurl_UIImageView.image = image
+                    }
+                }
+            }
+        }
+        
+        fullname_UILabel.text = fullname
+        instute_UILabel.text = instute
+        studyin_UILabel.text = studyin
+        preferteachingclass_UILabel.text = preferteachingclass
+        splishedsubject_UILabel.text = splishedsubject
+        time_UILabel.text = time
+        area_UILabel.text = area
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

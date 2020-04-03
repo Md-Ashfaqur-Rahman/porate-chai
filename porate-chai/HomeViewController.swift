@@ -12,7 +12,7 @@ import FirebaseDatabase
 class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-
+    var selected_TableRow: Int?
     var tutors = [Tutor]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,7 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         loadValueFromDatabase()
     }
+
     func loadValueFromDatabase() {
         Database.database().reference().child("tutor").observe(.childAdded) { (dataSnapshort) in
             if let dict = dataSnapshort.value as? [String: Any] {
@@ -38,10 +39,10 @@ class HomeViewController: UIViewController {
                 
                 self.tutors.append(tutor)
                 self.tableView.reloadData()
-                print(self.tutors)
             }
             
         }
+        
         
     }
     
@@ -92,19 +93,26 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
                 }
             }
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
         
         return cell
     }
-    
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selected_TableRow = indexPath.row
+        performSegue(withIdentifier: "goto_HomeVC_DetailsTutorialVC", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goto_HomeVC_DetailsTutorialVC" {
+            let distinationVC = segue.destination as! DetailsTutorViewController
+            distinationVC.area = tutors[selected_TableRow!].area
+            distinationVC.fullname = tutors[selected_TableRow!].fullname
+            distinationVC.instute = tutors[selected_TableRow!].instute
+            distinationVC.preferteachingclass  = tutors[selected_TableRow!].preferteachingclass
+            distinationVC.profileimageurl = tutors[selected_TableRow!].profileimageurl
+            distinationVC.splishedsubject = tutors[selected_TableRow!].splishedsubject
+            distinationVC.studyin = tutors[selected_TableRow!].studyin
+            distinationVC.time = tutors[selected_TableRow!].time
+        }
+        
+    }
 }

@@ -16,7 +16,7 @@
 		FC6B067E243524CC001630D6 /* TutorSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0677243524C8001630D6 /* TutorSignUpViewController.swift */; };
 		FC6B067F243524CC001630D6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0678243524CA001630D6 /* SearchViewController.swift */; };
 		FC6B0680243524CC001630D6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0679243524CB001630D6 /* HomeViewController.swift */; };
-		FC6B0683243524D3001630D6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0682243524D2001630D6 /* File.swift */; };
+		FC6B0683243524D3001630D6 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0682243524D2001630D6 /* Tutor.swift */; };
 		FC6B06872435270A001630D6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B068624352709001630D6 /* ProfileViewController.swift */; };
 		FC6B068D2435654B001630D6 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B068C2435654B001630D6 /* EditProfileViewController.swift */; };
 		FC6B068F24356C1F001630D6 /* DetailsTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B068E24356C1E001630D6 /* DetailsTutorViewController.swift */; };
@@ -40,7 +40,7 @@
 		FC6B0677243524C8001630D6 /* TutorSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorSignUpViewController.swift; sourceTree = "<group>"; };
 		FC6B0678243524CA001630D6 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		FC6B0679243524CB001630D6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		FC6B0682243524D2001630D6 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		FC6B0682243524D2001630D6 /* Tutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
 		FC6B068624352709001630D6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FC6B068C2435654B001630D6 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		FC6B068E24356C1E001630D6 /* DetailsTutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTutorViewController.swift; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		FC6B0681243524D2001630D6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FC6B0682243524D2001630D6 /* File.swift */,
+				FC6B0682243524D2001630D6 /* Tutor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 				FC6B068D2435654B001630D6 /* EditProfileViewController.swift in Sources */,
 				FC6B067B243524CC001630D6 /* SignUpTypeViewController.swift in Sources */,
 				FC6B068F24356C1F001630D6 /* DetailsTutorViewController.swift in Sources */,
-				FC6B0683243524D3001630D6 /* File.swift in Sources */,
+				FC6B0683243524D3001630D6 /* Tutor.swift in Sources */,
 				FCC3EE74243114710067BB67 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
