@@ -58,5 +58,10 @@ class DetailsTutorViewController: UIViewController {
         time_UILabel.text = time
         area_UILabel.text = area
     }
+    
+    @IBAction func sendMessage_Button_Action(_ sender: Any) {
+        performSegue(withIdentifier: "goto_DetailsVC_To_ChatVC", sender: nil)
+    }
 
+    
 }

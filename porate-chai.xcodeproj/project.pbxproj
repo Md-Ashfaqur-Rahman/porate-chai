@@ -26,6 +26,7 @@
 		FCC3EE7B243114890067BB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC3EE7A243114890067BB67 /* Assets.xcassets */; };
 		FCC3EE7E243114890067BB67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC3EE7C243114890067BB67 /* LaunchScreen.storyboard */; };
 		FCC3EE86243114CE0067BB67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCC3EE85243114CE0067BB67 /* GoogleService-Info.plist */; };
+		FCE16A242437F0F600F4E99B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE16A232437F0F600F4E99B /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		FCC3EE7D243114890067BB67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCC3EE7F243114890067BB67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCC3EE85243114CE0067BB67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FCE16A232437F0F600F4E99B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,15 +118,16 @@
 				FCC3EE71243114710067BB67 /* AppDelegate.swift */,
 				FCC3EE73243114710067BB67 /* SceneDelegate.swift */,
 				FCC3EE75243114710067BB67 /* ViewController.swift */,
-				FC6B0673243524C5001630D6 /* GuardianSignUpViewController.swift */,
-				FC6B0675243524C7001630D6 /* HomeTableViewCell.swift */,
 				FC6B0674243524C6001630D6 /* SignUpTypeViewController.swift */,
 				FC6B0677243524C8001630D6 /* TutorSignUpViewController.swift */,
+				FC6B0673243524C5001630D6 /* GuardianSignUpViewController.swift */,
 				FC6B0679243524CB001630D6 /* HomeViewController.swift */,
+				FC6B0675243524C7001630D6 /* HomeTableViewCell.swift */,
 				FC6B0678243524CA001630D6 /* SearchViewController.swift */,
 				FC6B068624352709001630D6 /* ProfileViewController.swift */,
 				FC6B068C2435654B001630D6 /* EditProfileViewController.swift */,
 				FC6B068E24356C1E001630D6 /* DetailsTutorViewController.swift */,
+				FCE16A232437F0F600F4E99B /* ChatViewController.swift */,
 				FC6B066F24352436001630D6 /* Main.storyboard */,
 				FC6B067124352459001630D6 /* Landing.storyboard */,
 				FCC3EE7A243114890067BB67 /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 				FC6B067E243524CC001630D6 /* TutorSignUpViewController.swift in Sources */,
 				FC6B068D2435654B001630D6 /* EditProfileViewController.swift in Sources */,
 				FC6B067B243524CC001630D6 /* SignUpTypeViewController.swift in Sources */,
+				FCE16A242437F0F600F4E99B /* ChatViewController.swift in Sources */,
 				FC6B068F24356C1F001630D6 /* DetailsTutorViewController.swift in Sources */,
 				FC6B0683243524D3001630D6 /* Tutor.swift in Sources */,
 				FCC3EE74243114710067BB67 /* SceneDelegate.swift in Sources */,
