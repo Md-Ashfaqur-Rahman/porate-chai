@@ -12,7 +12,6 @@ class ChatViewController: UIViewController {
 
     var chatcontainer = [String]()
     @IBOutlet weak var chat_TextField: UITextField!
-    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -27,9 +26,6 @@ class ChatViewController: UIViewController {
         tableView.reloadData()
         chat_TextField.text = ""
     }
-    
-    
-
 }
 extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
