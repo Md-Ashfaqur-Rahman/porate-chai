@@ -186,6 +186,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Search Tutor" id="68y-UP-Ar2"/>
                     <connections>
+                        <outlet property="area_TextField" destination="Ou6-2F-xFQ" id="C6h-kA-P5x"/>
+                        <outlet property="subject_TextField" destination="GjA-ME-MUi" id="nhR-AN-n0Q"/>
                         <outlet property="tableView" destination="spZ-3K-Rgd" id="cZO-Gk-2EO"/>
                         <segue destination="hQB-fO-Qcv" kind="show" identifier="goto_SearchVC_DetailsTutorialVC" id="vjY-NL-C0i"/>
                     </connections>
@@ -426,7 +428,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gwh-pE-KlT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4626.0869565217399" y="646.875"/>
+            <point key="canvasLocation" x="4638" y="628"/>
         </scene>
         <!--Home-->
         <scene sceneID="oH1-Re-SGJ">

@@ -13,15 +13,16 @@ class SearchViewController: UIViewController {
 
 
     var selected_TableRow: Int?
-    var count: Int = 0
     var tutors = [Tutor]()
+    var storeTutors = [Tutor]()
     
-    
+
+    @IBOutlet weak var subject_TextField: UITextField!
+    @IBOutlet weak var area_TextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         tableView.delegate = self
         tableView.dataSource = self
         loadValueFromDatabase()
@@ -30,10 +31,6 @@ class SearchViewController: UIViewController {
     func loadValueFromDatabase() {
         Database.database().reference().child("tutor").observe(.childAdded) { (dataSnapshort) in
             if let dict = dataSnapshort.value as? [String: Any] {
-                
-//                if let checkSubject = dict["splishedsubject"] {
-//                    print(checkSubject)
-//                }
                 
                 let areaString = dict["area"] as! String
                 let emailString = dict["email"] as! String
@@ -48,30 +45,30 @@ class SearchViewController: UIViewController {
                 let tutor = Tutor(areaString: areaString, emailString: emailString, fullnameString: fullnameString, instuteString: instuteString, preferteachingclassString: preferteachingclassString, profileimageurlString: profileimageurlString, splishedsubjectString: splishedsubjectString, studyinString: studyinString, timeString: timeString)
                 
                 self.tutors.append(tutor)
+                self.storeTutors.append(tutor)
                 self.tableView.reloadData()
             }
-            
         }
-        
-        
     }
     
     @IBAction func subject_Search_Action(_ sender: Any) {
-        for n in tutors {
-            print(n)
-                if tutors[count].splishedsubject.contains("Bangla") {
-                    print("Bangla is contains")
-                    
-                    print(self.count)
+        tutors.removeAll()
+        for n in storeTutors {
+            if n.splishedsubject.contains(subject_TextField.text!) {
+                tutors.append(n)
+                self.tableView.reloadData()
             }
-            self.count += 1
         }
-        
     }
     
     @IBAction func area_Search_Action(_ sender: Any) {
-
-      
+        tutors.removeAll()
+        for n in storeTutors {
+            if n.area.contains(area_TextField.text!) {
+                tutors.append(n)
+                self.tableView.reloadData()
+            }
+        }
     }
 }
 extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
@@ -84,15 +81,11 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "homeTableViewcell", for: indexPath) as! HomeTableViewCell
         
-//        cell.backgroundColor = UIColor.blue
-        //        cell.imageProfileTableViewCell.image = #imageLiteral(resourceName: "rowImage")
         cell.fullname.text = tutors[indexPath.row].fullname
         cell.instute.text = tutors[indexPath.row].instute
         cell.splishedsubject.text = tutors[indexPath.row].splishedsubject
         cell.time.text = tutors[indexPath.row].time
         cell.preferTeachingClass.text = tutors[indexPath.row].preferteachingclass
-        
-        
         
         if let imageURL = URL(string: tutors[indexPath.row].profileimageurl){
             DispatchQueue.global().async {
@@ -105,8 +98,6 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
                 }
             }
         }
-
-        
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -125,7 +116,6 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
             distinationVC.studyin = tutors[selected_TableRow!].studyin
             distinationVC.time = tutors[selected_TableRow!].time
         }
-        
     }
 }
 
